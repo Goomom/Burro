@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act photos GUIDE</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR MODERNA -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"> Act Photos</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#aprender" class="nav-link">Aprender</a></li>
+                <li><a href="#guia" class="nav-link">Guia</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-title">Act Photos GUIDE</h1>
+            <p class="hero-subtitle">Aprende a criar fotos profissionais de carros</p>
+            <button class="btn btn-primary" onclick="scroll_to('#guia')">Começar →</button>
+        </div>
+        <img src="IMG_20250520_154826_860.JPG" alt="Imagem do Act photos" class="hero-image">
+    </header>
+
+    <main class="container">
+        <!-- SEÇÃO SOBRE -->
+        <section class="section" id="sobre">
+            <h2 class="section-title">Sobre o Act Photos</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📸</div>
+                    <h3>Virtual Fotógrafo</h3>
+                    <p>Produz fotos incríveis de carros em Forza Horizon e The Crew.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎮</div>
+                    <h3>Reconhecimento</h3>
+                    <p>Capturo fotos de carros dentro dos jogos a mais de 5 anos.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✨</div>
+                    <h3>Criatividade</h3>
+                    <p>Vejo fotos de outros e adapto minhas técnicas para criar novas composições.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO APRENDER -->
+        <section class="section" id="aprender">
+            <h2 class="section-title">Aqui você vai aprender</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="feature-number">1</span>
+                    <div class="feature-content">
+                        <h3>Edição dentro do Jogo</h3>
+                        <p>Domina os controles e ferramentas de edição integradas.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-number">2</span>
+                    <div class="feature-content">
+                        <h3>Técnicas de Fotografia</h3>
+                        <p>Aprenda composição, iluminação e posicionamento perfeitos.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-number">3</span>
+                    <div class="feature-content">
+                        <h3>Edição Profissional</h3>
+                        <p>Use Lightroom, PicsArt e outras ferramentas avançadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO GUIA PASSO A PASSO -->
+        <section class="section" id="guia">
+            <h2 class="section-title">Guia Completo - Passo a Passo</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Configuração da Câmera</h3>
+                    <p>Escolha um ambiente adequado. Nunca fotografe contra o sol. Ajuste contraste e saturação com moderação.</p>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
+                        <div style="position: relative; display: inline-block; flex: 1; min-width: 250px; max-width: 450px;">
+                            <img src="Captura de tela 2026-02-02 124855.png" alt="Captura de Fotos - incorreta" style="width: 100%; border-radius: 8px; display: block;">
+                            <div style="position: absolute; top: 8px; right: 8px; background: rgba(220,20,60,0.95); color: #fff; padding: 6px 8px; border-radius: 50%; font-weight: 700; line-height: 1; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">✕</div>
+                            <div style="position: absolute; inset: 0; pointer-events: none; border-radius: 8px; box-shadow: inset 0 0 0 3px rgba(220,20,60,0.08);"></div>
+                        </div>
+
+                        <div style="position: relative; display: inline-block; flex: 1; min-width: 250px; max-width: 450px;">
+                            <img src="Captura de tela 2026-02-02 124909.png" alt="Captura de Fotos - correta" style="width: 100%; border-radius: 8px; display: block;">
+                            <div style="position: absolute; top: 8px; right: 8px; background: rgba(34,197,94,0.95); color: #fff; padding: 6px 8px; border-radius: 50%; font-weight: 700; line-height: 1; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">✓</div>
+                            <div style="position: absolute; inset: 0; pointer-events: none; border-radius: 8px; box-shadow: inset 0 0 0 3px rgba(34,197,94,0.08);"></div>
+                        </div>
+                    </div>
+                    <div class="step-tips" style="margin-top: 12px; text-align: center;">
+                        <strong>💡 Dica:</strong> Use luz natural quando possível
+                    </div>
+                </div>
+
+                <div class="step-arrow">↓</div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Captura de Fotos</h3>
+                    <p>Tire múltiplas fotos em diferentes ângulos e posições. Experimente perspectivas criativas.</p>
+                    <div class="step-tips">
+                        <strong>💡 Use Grid Normal e Focado, isso te ajuda a manter a câmera mais alinhada</strong> 
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
+                        <img src="Captura de tela 2026-02-02 102327.png" alt="Captura de Fotos" style="width: 100%; max-width: 450px; border-radius: 8px; flex: 1; min-width: 250px;">
+                        <img src="Captura de tela 2026-02-02 102555.png" alt="Captura de Fotos" style="width: 100%; max-width: 450px; border-radius: 8px; flex: 1; min-width: 250px;">
+                    </div>
+                    <div class="step-tips" style="margin-top: 15px;">
+                        <strong>💡 Dica:</strong> Tire no mínimo 5-10 fotos
+                    </div>
+                </div>
+
+                <div class="step-arrow">↓</div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Importar para Lightroom</h3>
+                    <p>Exporte as fotos do jogo e importe-as no Lightroom para edição avançada.</p>
+                    <div class="step-tips">
+                        <strong>💡 Dica:</strong> Organize as fotos em coleções
+                    </div>
+                </div>
+
+                <div class="step-arrow">↓</div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Edição Completa</h3>
+                    <p>Ajuste exposição, contraste, vibração, saturação e detalhes.</p>
+                    <div class="step-tips">
+                        <strong>💡 Dica:</strong> Não exagere nos ajustes
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTACTO -->
+        <section class="section contact-section" id="contato">
+            <h2 class="section-title">Precisa de Ajuda?</h2>
+            <div class="contact-content">
+                <p>Tem dúvidas? Entre em contato connosco!</p>
+                <button class="btn btn-secondary" onclick="alert('Instagram: @actp.vpart')">
+                    📱 Seguir no Instagram
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER MODERNO -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Act Photos. Todos os direitos reservados.</p>
+            <p>Feito para aprendizado</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT PARA INTERATIVIDADE -->
+    <script src="js/script.js"></script>
+</body>
+</html>

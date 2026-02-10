@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+  simple.html
+  Exemplo de página criada apenas com HTML.
+  Comentários explicam cada parte; nenhum CSS ou JS externo é usado.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Simples (somente HTML)</title>
+</head>
+<body>
+  <!-- HEADER: título e descrição do site -->
+  <header>
+    <h1>Meu Site Simples</h1>
+    <p>Exemplo mínimo usando apenas HTML — sem CSS nem JavaScript.</p>
+  </header>
+
+  <!-- NAV (opcional): links para seções dentro da mesma página -->
+  <nav>
+    <a href="#sobre">Sobre</a> |
+    <a href="#lista">Lista</a> |
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <!-- Seção Sobre -->
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>Esta seção descreve o propósito da página. Use &lt;p&gt; para parágrafos.</p>
+    </section>
+
+    <!-- Seção com lista -->
+    <section id="lista">
+      <h2>Coisas que gosto</h2>
+      <ul>
+        <li>Programar</li>
+        <li>Aprender HTML</li>
+        <li>Testar coisas novas</li>
+      </ul>
+    </section>
+
+    <!-- Seção de contato simples (formulário sem processamento) -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <!-- action="#" evita envio para servidor; apenas demonstra estrutura -->
+      <form action="#" method="get">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        <br>
+        <label for="mensagem">Mensagem:</label>
+        <br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Escreva aqui..."></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER: informações de rodapé -->
+  <footer>
+    <p>Feito com &lt;3 — Página apenas em HTML.</p>
+  </footer>
+</body>
+</html>

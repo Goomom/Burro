@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Meu Site Simples</h1>
+        <p>Exemplo básico de HTML + CSS + JS</p>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Sobre</h2>
+            <p>Este é um site de exemplo criado para aprender HTML, CSS e JavaScript.</p>
+        </section>
+
+        <section>
+            <h2>Interação</h2>
+            <button id="msgButton">Clique em mim</button>
+        </section>
+
+        <section>
+            <h2>Formulário simples</h2>
+            <form id="sampleForm">
+                <label for="name">Seu nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="formResult" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <small>Feito para aprendizado — Abra <a href="index.html">index.html</a> no navegador.</small>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

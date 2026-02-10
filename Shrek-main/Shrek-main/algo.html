@@ -1,0 +1,196 @@
+<!-- O Básico do HTML -->
+
+<!-- HTML (HyperText Markup Language) é a linguagem padrão para criar páginas web. Funciona usando tags (etiquetas) que dizem ao navegador como exibir o conteúdo -->
+
+<!-- Estrutura Básica -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Título da Página</title>
+</head>
+<body>
+    <!-- Seu conteúdo aqui -->
+</body>
+</html>
+
+<!-- Principais Conceitos -->
+
+<!-- 1. DOCTYPE - Define que é um documento HTML5
+2. <html> - Raiz do documento
+3. <head> - Metadados (título, codificação, links)
+4. <body> - Conteúdo visível da página -->
+
+<!-- Tags Comuns -->
+<!--
+<h1> a <h6>	Títulos (h1 maior, h6 menor)
+<p>	Parágrafo
+<a href="">	Link
+<img src="">	Imagem
+<ul>, <ol>, <li>	Listas
+<div>	Contêiner genérico
+<button>	Botão
+
+Exemplo Prático
+
+<!--  -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Primeiro HTML</title>
+</head>
+<body>
+    <h1>Bem-vindo!</h1>
+    <p>Este é meu primeiro arquivo HTML.</p>
+    <a href="https://google.com">Clique aqui</a>
+</body>
+</html>
+
+<!-- Como Funcionam os Links -->
+ <!-- A tag <a> (âncora) cria links clicáveis. A seleção que você fez mostra o atributo href que define para onde o link vai. -->
+
+<a href="https://google.com">Clique aqui</a>    
+
+<!-- Componentes:
+
+<a> - Tag de link
+href="" - Atributo que define o destino
+Clique aqui - Texto visível para o usuário 
+Outros Atributos Úteis-->
+
+<!-- Link que abre em nova aba -->
+<a href="https://google.com" target="_blank">Clique aqui</a>
+
+<!-- Link interno (outra página do seu site) -->
+<a href="pagina2.html">Ir para página 2</a>
+
+<!-- Link para email -->
+<a href="mailto:seu@email.com">Enviar email</a>
+
+Criando Listas
+
+<!-- Lista não-ordenada (com bullets) -->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+<!-- Lista ordenada (com números) -->
+<ol>
+    <li>Primeiro</li>
+    <li>Segundo</li>
+</ol>
+
+
+<!-- Imagens -->
+<img src="imagem.jpg" alt="Descrição da imagem">
+
+<!-- Atributos:
+
+src - Caminho da imagem
+alt - Texto alternativo (importante para acessibilidade) -->
+
+<!-- Exemplos Práticos de HTML -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Prática de HTML</title>
+</head>
+<body>
+    <!-- Títulos -->
+    <h1>Este é um Título H1</h1>
+    <h2>Este é um Título H2</h2>
+    <h3>Este é um Título H3</h3>
+
+    <!-- Parágrafos -->
+    <p>Este é um parágrafo simples. HTML é fácil de aprender!</p>
+    <p>Você pode ter quantos parágrafos quiser na página.</p>
+
+    <!-- Listas não-ordenadas -->
+    <h2>Frutas</h2>
+    <ul>
+        <li>Maçã</li>
+        <li>Banana</li>
+        <li>Laranja</li>
+    </ul>
+
+    <!-- Listas ordenadas -->
+    <h2>Passos para fazer um bolo</h2>
+    <ol>
+        <li>Misturar ingredientes</li>
+        <li>Colocar no forno</li>
+        <li>Deixar esfriar</li>
+    </ol>
+
+    <!-- Links -->
+    <h2>Links Úteis</h2>
+    <a href="https://www.google.com" target="_blank">Google</a> <br>
+    <a href="mailto:seu@email.com">Enviar Email</a>
+
+    <!-- Botão -->
+    <button>Clique em mim!</button>
+
+    <!-- ========== SEÇÃO: INSERINDO IMAGENS ========== -->
+    <h2>Como Inserir Imagens</h2>
+    
+    <!-- Exemplo 1: Imagem JPG simples -->
+    <h3>Exemplo 1 - Imagem JPG</h3>
+    <img src="imagens/foto.jpg" alt="Foto de exemplo em JPG">
+    
+    <!-- Exemplo 2: Imagem PNG com dimensões -->
+    <h3>Exemplo 2 - Imagem PNG com Tamanho</h3>
+    <img src="imagens/logo.png" alt="Logo em PNG" width="200" height="150">
+    
+    <!-- Exemplo 3: Imagem com apenas largura (altura ajusta automaticamente) -->
+    <h3>Exemplo 3 - Imagem Responsiva</h3>
+    <img src="imagens/banner.jpg" alt="Banner responsivo" width="100%">
+    
+    <!-- Exemplo 4: Imagem de URL externa -->
+    <h3>Exemplo 4 - Imagem da Internet</h3>
+    <img src="https://via.placeholder.com/300x200" alt="Imagem placeholder da internet" width="300">
+    
+    <!-- Exemplo 5: Imagem como Link (clicável) -->
+    <h3>Exemplo 5 - Imagem Clicável</h3>
+    <a href="https://google.com" target="_blank">
+        <img src="imagens/icone.png" alt="Clica em mim!" width="100">
+    </a>
+    
+    <!-- Atributos Úteis de <img>:
+    
+    src              - Caminho ou URL da imagem (OBRIGATÓRIO)
+    alt              - Texto alternativo (importante para acessibilidade)
+    width            - Largura da imagem em pixels ou percentagem
+    height           - Altura da imagem em pixels
+    title            - Texto que aparece ao passar o mouse
+    style            - Estilos CSS inline
+    class            - Classe CSS
+    id               - ID único para CSS/JavaScript
+    border           - Borda da imagem (deprecated, use CSS)
+    align            - Alinhamento (deprecated, use CSS)
+    
+    Exemplos de Caminhos:
+    
+    imagens/foto.jpg                    - Pasta local relativa
+    ../imagens/foto.jpg                 - Pasta anterior
+    /imagens/foto.jpg                   - Pasta raiz do projeto
+    https://site.com/imagens/foto.jpg   - URL completa
+    
+    -->
+    
+    <!-- Exemplo 6: Imagem com mais atributos -->
+    <h3>Exemplo 6 - Imagem com Atributos Completos</h3>
+    <img 
+        src="imagens/galeria.png" 
+        alt="Galeria de fotos"
+        width="250"
+        height="200"
+        title="Passe o mouse aqui!"
+        style="border: 3px solid #007bff; border-radius: 10px;"
+    >
+
+</body>
+</html>
+
