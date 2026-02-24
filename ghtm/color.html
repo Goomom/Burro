@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Cores</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .color-box {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .color-code {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎨 Gerador de Cores</h1>
+        <div class="color-box" id="colorBox"></div>
+        <button onclick="generateColor()">Gerar Cor</button>
+        <div class="color-code" id="colorCode">#FFFFFF</div>
+    </div>
+
+    <script>
+        function generateColor() {
+            const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+            document.getElementById("colorBox").style.backgroundColor = randomColor;
+            document.getElementById("colorCode").textContent = randomColor;
+        }
+
+        // Gera uma cor ao carregar a página
+        generateColor();
+    </script>
+
+</body>
+</html>
