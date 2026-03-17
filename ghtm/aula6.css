@@ -30,15 +30,12 @@ header{
     width: 150px;
     height: 150px;
     background-color: #e25a36;
-    color: #f8f9fa;
+    color: #e25a36;
     border: 1px;
     text-align: center;
     padding: 10px;
 
 }
-
-
-
 
 /* Elemento filho ( > ) */
 .container > p{
@@ -85,6 +82,7 @@ header{
     transition: 1.5s;
     color: #e25a36;
     border: 2px double #e25a36;
+    text-align: center;
 }
 
 .container-2 p{
@@ -128,4 +126,12 @@ button:hover{
 .container-2 h2:hover::first-letter{
     color: #e25a36;
     transition: 1s;
+}
+
+.container div:hover{
+    opacity: 50%;
+    color: #4e5052;
+}
+.container div:hover:hover{
+    color: #4e5052;
 }
