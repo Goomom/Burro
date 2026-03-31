@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 8 | CSS</title>
+    <link rel="stylesheet" href="aula8.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Formatação da Página
+        </h1>
+    </header>
+
+    <h2><i>Border-radius</i></h2>   
+    <p>Para você conseguir ver a novidade que a propriedade border-radius pode acrescentar no seu código, <br>inicie criando um código-fonte HTML com um texto no escopo de uma < div > .</p> 
+    <p>Agora você vai criar um arquivo CSS para configurar essa “box”. Nela, você pode colocar as propriedades que você já estava utilizando.</p>
+
+    <div id="box">
+        <h1>Sobre</h1>
+        <p>Somos uuma escola de programação.</p>
+    </div>
+
+    <h2><i>Box-sizing</i></h2>
+    <p>Se você aumentar bastante o valor da propriedade padding, vai acabar mudando o tamanho da sua caixa. <br> Para evitar que isso aconteça, utilize a propriedade box-sizing do CSS3 com o valor igual a “border-box”.</p>
+    <p>Com 200px de padding, porém usando o box-sizing: border-box;</p>
+
+    <div id="box2">
+        <h1>Sobre</h1>
+        <p>Somos uuma escola de programação.</p>
+    </div>
+
+
+
+         <h3>Um efeito bem legal para o seu site é posicionar textos em frente a imagens, que você pode fazer utilizando a mesma box que você acabou de configurar: <br>
+        #box{ <br>
+            width: 400px;<br>
+            height: 200px;<br>
+            background: url <br>
+        }
+        </h3>
+   
+    
+    
+
+    <h1>Efeitos estáticos</h1>
+    <h2><i>Transparências</i></h2>
+    <p>Para resolver o problema citado anteriormente, você pode utilizar o valor rgba(r,g,b,alfa) para a propriedade background, onde o r se refere a saturação de cor vermelha que vai aparecer sobre uma a imagem, g é a saturação de verde e b é a saturação de azul. <br>Combinando as três variáveis, você poderá produzir qualquer cor.</p>
+
+    <h2><i>Sombras</i></h2>
+    <p>Posição horizontal da sombra - Definida em pixels, o valor igual a zero fica exatamente embaixo do texto. <br> Para posicionar a sombra mais à esquerda, utilize valores negativos. Para posicionar a sombra mais à direita, utilize valores positivos.</p>
+    <p>Posição vertical da sombra - Também definida em pixels, quando o valor é igual a zero a sombra fica exatamente embaixo do texto. <br>Para posicionar a sombra mais para cima, utilize valores negativos. Para posicionar a sombra mais para baixo, utilize valores positivos.</p>
+    <p>“Grau de borrão”- Opcional. Deixa a sombra com os contornos mais suaves.</p>
+    <p>Cor da sombra - Aqui você pode definir uma cor diretamente, por exemplo “black”, ou utilizar o valor rgba que você aprendeu na seção sobre transparência, criando sombras com cores transparentes.</p>
+    
+    <h2><i>Degradês</i></h2>
+    <p>Se você não tiver uma imagem, é possível preencher a box com um degradê entre duas cores.</p>
+
+    <h2><i>linear-gradient</i></h2>
+    <p>O linear-gradient por padrão começa de cima para baixo, porém você pode adicionar o parâmetro “to right”, “to left” ou “to top”, para começar pela esquerda, pela direita ou por baixo, respectivamente.</p>
+    
+    <h2><i>radial-gradient</i></h2>
+    <p>Já o radial-gradient cria circunferências coloridas a partir do centro da box, criando um efeito bastante bonito.</p>
+    
+    <h3>Você também pode adicionar sombras em uma < div >. Nela, além dos valores que você já viu, é possível definir várias sombras ao mesmo tempo e adicionar mais um valor além do “grau de borrão”, esse valor representa o “grau de espalhamento” da sombra.</h3>
+    
+  
+
+
+     <h1>Efeitos Dinâmicos</h1>
+     <h2><i>Animações</i></h2>   
+
+     <p>ara criar uma animação, comece digitando o código @keyframes seguido do nome da animação no seletor de um código CSS3. <br> No escopo desse seletor devem ser informados como se encontra o elemento que vai sofrer a animação, na propriedade “from”, e como ele vai ficar após a animação, na propriedade “to”.</p>
+
+</body>
+</html>
