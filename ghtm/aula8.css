@@ -23,9 +23,43 @@ header {
 #box {
     width: 200px;
     height: 100px;
+    background: url('https://wallpapers.com/images/hd/bright-green-abstract-bb4qnugrriv4l3h8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: -5px 10px 5px 3px gray;
+}
+
+
+#box2 {
+    width: 200px;
+    height: 100px;
     background-color: #254426;
     margin: 0 auto;
     color: #f0f0f0;
-    padding: 20px;
+    padding: 200px;
     border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: -5px 10px 5px 3px gray;
 }
+
+h1, h2, h3, p {
+    margin: 15px;
+}
+
+#box h1,
+#box p {
+    margin: 0;
+}
+
+
+body > h1,
+body > h2,
+body > h3,
+body > p {
+    margin: 15px;
+}
+
