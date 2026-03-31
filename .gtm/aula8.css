@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    background: url('https://wallpapers.com/images/hd/bright-green-abstract-bb4qnugrriv4l3h8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    background-color: #254426;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+}
+
+.showcase-flex {
+    min-height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.showcase-flex div, .showcase-grid {
+    width: 150px;
+    height: 150px;
+    background-color: #254426;
+    border: 1px solid black;
+}
+
+.showcase-grid {
+    min-height: 300px;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 150px 500px 150px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.showcase-grid div:nth-child(2) {
+    width: 100%;
+    height: 150px;
+}
+
+.showcase-inline-block{
+    width: 500px;
+    align-content: center;
+}
+
+
+.showcase-anim div{
+    width: 50px;
+    border-radius: 50%;
+    background: #2a9b39;
+    background: linear-gradient(90deg, rgba(42, 155, 57, 1) 0%, rgba(186, 217, 188, 1) 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation{
+    width: 50px;
+    height: 50px;
+    background: #2a9b39;
+    background: linear-gradient(90deg, rgba(42, 155, 57, 1) 0%, rgba(186, 217, 188, 1) 50%);
+    border-radius: 50%;
+    animation: zoom 2s infinite ease-in-out;
+    animation: zoomshadow 2s infinite ease-in-out;
+}
+
+@keyframes zoom{
+    0%{transform: scale(0.5) rotate(0deg);}
+
+    50%{transform: scale(1.2) rotate(180deg);}
+
+    100%{transform: scale(0.5) rotate(360deg);}
+}
+
+@keyframes zoomshadow{
+    0%{transform: scale(0.5);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 5);}
+
+    50%{transform: scale(1);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 1);}
+
+    100%{transform: scale(0.5);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 5);}
+}

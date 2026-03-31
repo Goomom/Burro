@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7</title>
+    <link rel="stylesheet" href="aula7.css">
+</head>
+<body>
+    <header>
+    <h1>Hieraquia, Expressôes e Layout</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2> Hieraquia no DOM </h2>
+            <p>
+                Hieraquia no DOM ( Documento Object Model) é a estrutura <br> 
+                em forma de árvore que organiza todos os elementos de uma <br> 
+                página HTML.
+            </p>
+
+            <h3>Cada elemento pode ter:</h3>
+            <ul>
+                <li>Pai ( parent )</li>
+                <li>Filho ( children )</li>
+                <li>Irmãos ( siblings ) </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Expressôes regulares</h2>
+            <div>
+                <h3>Igualdade ( = )</h3>
+                
+                    <code>input [type='text']</code>
+                    <p>Busca o input que tenha o type = 'text'.</p>
+
+                <input type="text" placeholder="Esse tem  o tipo text">
+
+                
+                    <code>input [type='number']</code>   
+                    <p>Busca o input que tenha o type = 'number'.</p>
+              
+                <input type="number" placeholder="Esse tem o tipo number">
+            </div>
+
+            <div>
+                <h3>Começa com ( ^= )</h3>
+
+                <code>a[href ^= "https"]</code>
+                <p>Pega o link ( a ) que inicie com o texto especificado.</p>
+
+                <a href="https//:www.youtube.com"></a> <- Esse será escolhido
+                <a href="www.youtube.com"></a>
+            </div>
+
+            <div>
+                <h3>Termina com ( $= )</h3>
+                <code>img[src $= '.png']</code>
+                <p>Seleciona a imagem cujo src termine com .png</p>
+
+                <img src="Imagem-1.png" alt="Imagem 1"> <- Esse será escolhido
+                <img src="Imagem-2.jpeg" alt="Imagem 2">
+            </div>
+
+            <div>
+                <h3>Contém ( *= )</h3>
+                <code>div[class *= 'card']</code>
+                <p>Pega a div cuja classe tenha a palavra card em qualquer posição.</p>
+
+                <div class="container-catd"></div>
+                <div class="card-image"></div> Ambos serão selecionados
+            </div>
+
+            <div>
+                <h3>Contém palavra  ( ~= )</h3>
+                <code>div[class ~= 'active']</code>
+                <p>Busca div cuja classe tenha a palavra active separada por espaços.</p>
+
+                <div class="active-container"></div>
+                <div class="active container"></div> <- Esse será escolhido
+
+                <div>
+                    <h3>Começa com prefixo + hífen ( |= )</h3>
+                    <code>p[lang |= 'en']</code>
+                    <p>Busca o prefixo determinado adicionando um hífen nele. pt-</p>
+
+                    <p lang="pt-BR">Português VERDADEIRO</p>
+                    <p lang="pt-PT">Português FALSO</p> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; HTML </p>
+            <p>Feito para aprendizado</p>
+        </div>
+    </footer
+
+</body>
+</html>
