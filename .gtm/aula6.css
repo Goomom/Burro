@@ -1,0 +1,137 @@
+* {
+   box-sizing: border-box;  
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    border: 4px;
+    border-radius: 10px;
+}
+
+header{
+    color: #f8f9fa;
+    text-align: center;
+    background-color: #e25a36;
+    padding: 25px;
+}
+
+.container, .container-2{
+    width: 100%;
+    height: 200px;
+    padding: 22px;
+    border: 1px solid double black;
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.container div{
+    width: 150px;
+    height: 150px;
+    background-color: #e25a36;
+    color: #e25a36;
+    border: 1px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+/* Elemento filho ( > ) */
+.container > p{
+    color: #e25a36;
+}
+
+/* Irmão adjacente ( + ) */
+
+.container p + div{
+    background-color: #f8f9fa;
+    color: #e25a36;
+}
+
+/* Irmão geral ( ~ ) */
+
+/* .container p ~ div {
+    background-color: chartreuse;
+} */
+
+
+.container-2 div{
+    border: 1px;
+    text-align: center;
+    align-self: center;
+    padding: 10px;
+    width: 150px;
+    height: 150px
+}
+
+.container-2 .div-1{
+    background-color: #e25a36;
+}
+
+.container-2 .div-2{
+    background-color: #e25a36;
+}
+
+.container-2 .div-3{
+    background-color: #e25a36;
+}
+.container-2 div:hover{
+    background-color: #f8f9fa;
+    transform: translateY(-14) scale(2);
+    transition: 1.5s;
+    color: #e25a36;
+    border: 2px double #e25a36;
+    text-align: center;
+}
+
+.container-2 p{
+    text-align: center;
+    font-size: 18px;
+}
+
+button{
+    border-bottom: 1px;
+    border-color: #e25a36;
+    color: #f8f9fa;
+    border: 3px double #f8f9fa;
+    background-color: #e25a36;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #f8f9fa;
+    color: #e25a36;
+    transition: 1s;
+    border: 3px double #e25a36;
+}
+
+/*  Pseudo-elemento */
+
+.container-2 h2::first-letter{
+    color: #4e5052;
+    font-size: larger;
+}
+
+.container-2 h2{
+    color: #e25a36;
+}
+
+.container-2 h2:hover{
+    color: #4e5052;
+    transition: 1s;
+}
+
+.container-2 h2:hover::first-letter{
+    color: #e25a36;
+    transition: 1s;
+}
+
+.container div:hover{
+    opacity: 50%;
+    color: #4e5052;
+}
+.container div:hover:hover{
+    color: #4e5052;
+}
