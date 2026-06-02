@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadore</title>
+
+    <!-- Inclui o tailwindcss via cdm -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex items-center justify-center bg-emerald-950">
+    <div class="w-80 bg-zinc-800 p-5 rounded-2xl shadow-2xl">
+        <input type="text" id="display" readonly class="w-full h-16 mb-4 px-3 text-right text-3x1 text-white bg-zinc-700 rounded-2xl">
+
+        <div class="grid grid-cols-4 gap-2">
+            <button onclick="limpar()" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">C</button>
+            
+            <button onclick="apagar()" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">CE</button>
+
+            <button onclick="adicionar('%')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">%</button>
+
+            <button onclick="adicionar('÷')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">÷</button>
+
+            <button onclick="adicionar('7')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">7</button>
+
+            <button onclick="adicionar('8')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">8</button>
+
+            <button onclick="adicionar('9')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">9</button>
+
+            <button onclick="adicionar('*')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">×</button>
+
+            <button onclick="adicionar('4')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">4</button>
+
+            <button onclick="adicionar('5')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">5</button>
+
+            <button onclick="adicionar('6')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">6</button>
+
+            <button onclick="adicionar('-')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">-</button>
+
+            <button onclick="adicionar('1')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">1</button>
+
+            <button onclick="adicionar('2')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">2</button>
+
+            <button onclick="adicionar('3')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">3</button>
+            
+            <button onclick="adicionar('+')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">+</button>
+
+            <button onclick="adicionar('0')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">0</button>
+
+            <button onclick="adicionar('.')" class="h-14 w-14 rounded-2xl bg-zinc-600 text-white text-xl hover:bg-zinc-500 transition">.</button>
+
+            <button onclick="calcular()" class="col-span-2 h-14 rounded-2xl bg-orange-500 text-white text-x1 hover:bg-orange-400 transition">=</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    
+
+</body>
+</html>
